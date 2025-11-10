@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikshitha | Portfolio</title>
+
+    <!-- ===== CSS Styles ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #6a0dad, #b57edc);
+            color: white;
+            padding: 80px 20px;
+        }
+
+        #home h2 {
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        #home p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: white;
+            color: #6a0dad;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6a0dad;
+            color: white;
+            border: 2px solid white;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 4px solid #6a0dad;
+        }
+
+        .project {
+            background: white;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #6a0dad;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background-color: #500a8d;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        #formMessage {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Nikshitha</h1>
+        <p>B.Tech Student | Web Developer | Learner</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>
+            Hi! I'm <strong>Nikshitha</strong>, a passionate B.Tech student exploring the world of web development and technology.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Nikshitha">
+        <p>
+            I'm a dedicated B.Tech student interested in creating interactive and visually appealing web applications.
+            I specialize in front-end development and continuously learn about modern technologies such as React, Node.js, and APIs.
+        </p>
+        <p>
+            Outside of coding, I enjoy participating in hackathons, learning design principles, and contributing to open-source projects.
+        </p>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>🌐 Personal Portfolio Website</h3>
+            <p>A responsive website built using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+        </div>
+
+        <div class="project">
+            <h3>🧠 AI Chatbot</h3>
+            <p>A simple chatbot that responds to user queries using JavaScript logic and a mock API.</p>
+        </div>
+
+        <div class="project">
+            <h3>📊 Student Result Management System</h3>
+            <p>A web application that helps manage and display student results efficiently using Firebase as a backend.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:nikshitha@example.com">nikshitha@example.com</a></p>
+        <p>Phone: 9xxxxxxxx9</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2025 Nikshitha | Built with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- ===== JAVASCRIPT (Email Validation + Unit Test Export) ===== -->
+    <script>
+        // Email validation function
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+
+        // Contact form handler
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("contactForm");
+            const message = document.getElementById("formMessage");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const email = document.getElementById("email").value;
+
+                if (!validateEmail(email)) {
+                    message.textContent = "❌ Please enter a valid email address.";
+                    message.style.color = "red";
+                } else {
+                    message.textContent = "✅ Message sent successfully!";
+                    message.style.color = "green";
+                    form.reset();
+                }
+            });
+        });
+
+        // Export function for Jest unit testing (optional)
+        if (typeof module !== "undefined") {
+            module.exports = { validateEmail };
+        }
+    </script>
+</body>
+</html>
